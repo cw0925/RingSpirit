@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9400D3">
+<GridView
+    android:id="@+id/gv_my"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="3"
+    android:stretchMode="columnWidth"
+    android:gravity="center">
+
+</GridView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:orientation="vertical"
+       android:layout_marginTop="15dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="当前铃声"
+               android:layout_weight="1"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="15dp"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:layout_marginRight="15dp"
+               android:text="收藏"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="15dp"
+               android:text="来电铃声"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="播放"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="更改"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="15dp"
+               android:text="闹钟铃声"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="播放"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="更改"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_marginLeft="15dp"
+               android:text="短信铃声"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="播放"/>
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:text="更改"/>
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
