@@ -51,6 +51,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initView();
         initEvent();
         setSelect(0);
+        setTitle("sss");
     }
     private void initView(){
         line_home = (LinearLayout)findViewById(R.id.line_home);
