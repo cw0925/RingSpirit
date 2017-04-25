@@ -15,12 +15,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ringelf.moadx.www.ringspirit.R;
+import ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar;
 
 /**
  * Created by cw on 16/10/18.
  */
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
+
+    private NavigationBar topbar;//导航栏
 
     private TextView tv_recommend;
     private TextView tv_latest;
@@ -46,6 +49,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         initEvent();
     }
     private void initView() {
+
+        //导航栏设置
+        topbar = (NavigationBar) getActivity().findViewById(R.id.navi_home);
+        topbar.setTitle("首页");
+
         tv_recommend = (TextView) getActivity().findViewById(R.id.tv_recommend);
         tv_latest = (TextView) getActivity().findViewById(R.id.tv_latest);
         tv_hot = (TextView) getActivity().findViewById(R.id.tv_hot);

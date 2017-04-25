@@ -18,12 +18,15 @@ import java.util.Map;
 
 import ringelf.moadx.www.ringspirit.R;
 import ringelf.moadx.www.ringspirit.activity.RingActivity;
+import ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar;
 
 /**
  * Created by cw on 16/10/18.
  */
 
 public class CategoryFragment extends Fragment {
+
+    private NavigationBar topbar;//导航栏
 
     private GridView gview;
     private List<Map<String, Object>> data_list;
@@ -46,6 +49,10 @@ public class CategoryFragment extends Fragment {
     }
 
     private void initView() {
+        //导航栏设置
+        topbar = (NavigationBar) getActivity().findViewById(R.id.navi_category);
+        topbar.setTitle("分类");
+
         gview = (GridView) getActivity().findViewById(R.id.gridview);
         //新建List
         data_list = new ArrayList<Map<String, Object>>();

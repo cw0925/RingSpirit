@@ -10,12 +10,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ringelf.moadx.www.ringspirit.R;
+import ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar;
 
 /**
  * Created by cw on 16/10/18.
  */
 
 public class FindFragment extends Fragment {
+    private NavigationBar topbar;//导航栏
     private WebView web;
     @Nullable
     @Override
@@ -31,6 +33,10 @@ public class FindFragment extends Fragment {
     }
 
     private void initView() {
+        //导航栏设置
+        topbar = (NavigationBar) getActivity().findViewById(R.id.navi_find);
+        topbar.setTitle("发现");
+
         web = (WebView) getActivity().findViewById(R.id.webview);
         web.setWebViewClient(new WebViewClient());
         web.loadUrl("http://app.modown.cc/R/index.aspx?type=RingElf");

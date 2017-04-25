@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#32CD32">
+    <ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_find">
+
+    </ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar>
 <WebView
     android:id="@+id/webview"
     android:layout_width="match_parent"

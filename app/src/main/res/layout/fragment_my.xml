@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9400D3">
+    <ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_my">
+
+    </ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar>
 <GridView
     android:id="@+id/gv_my"
     android:layout_width="match_parent"

@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ringelf.moadx.www.ringspirit.activity.BaseActivity;
+import ringelf.moadx.www.ringspirit.customnavigationbar.NavigationBar;
 import ringelf.moadx.www.ringspirit.fragment.CategoryFragment;
 import ringelf.moadx.www.ringspirit.fragment.FindFragment;
 import ringelf.moadx.www.ringspirit.fragment.HomeFragment;
@@ -23,6 +24,8 @@ import ringelf.moadx.www.ringspirit.fragment.MyFragment;
 import ringelf.moadx.www.ringspirit.fragment.RecommendFragment;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
+
+//    private NavigationBar topbar;//导航栏
 
     private ViewPager home_viewPager;
     private FragmentPagerAdapter fadapter;
@@ -51,9 +54,27 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initView();
         initEvent();
         setSelect(0);
-        setTitle("sss");
     }
     private void initView(){
+//        //导航栏设置
+//        topbar = (NavigationBar) super.findViewById(R.id.navi_main);
+//        topbar.setTitle("首页");
+//        // Java中叫回调，iOS中叫Block
+//        topbar.setClickCallback(new NavigationBar.ClickCallback(){
+//            /*** * 返回按钮 */
+//            @Override
+//            public void onBackClick() {
+//                System.out.println("返回按钮");
+//                System.out.println("写你的逻辑呗~");
+//            }
+//            /*** * 右侧按钮 */
+//            @Override
+//            public void onRightClick() {
+//                System.out.println("右侧按钮");
+//                System.out.println("写你的逻辑呗~");
+//            }
+//        });
+
         line_home = (LinearLayout)findViewById(R.id.line_home);
         line_category = (LinearLayout)findViewById(R.id.line_category);
         line_find = (LinearLayout)findViewById(R.id.line_find);
